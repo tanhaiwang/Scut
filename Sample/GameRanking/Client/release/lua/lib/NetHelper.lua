@@ -61,7 +61,7 @@ function ZyExecRequest(pScutScene, lpData, bShowLoading,type)
 		ScutDataLogic.CDataRequest:Instance():AsyncExecRequest(pScutScene, ZyWriter:generatePostData(), ZyRequestCounter, nil);
 	else
 		local lenth=string.len(ZyWriter:generatePostData())
-		local addressPath="ddz.36you.net:9700"
+		local addressPath="http://omgwingame.cloudapp.net/rank/service.aspx"
 		ScutDataLogic.CDataRequest:Instance():AsyncExecTcpRequest(pScutScene,addressPath, 1, nil, ZyWriter:generatePostData(), lenth);
 	--	accountInfo.saveConfig("sys/read.ini", "URL", "URL" ,ZyWriter:generatePostData())
 		ScutDataLogic.CNetWriter:resetData();		

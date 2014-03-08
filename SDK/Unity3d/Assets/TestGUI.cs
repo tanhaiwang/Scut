@@ -34,7 +34,7 @@ public class TestGUI : MonoBehaviour {
 	    // Now create any Controls you like, and they will be displayed with the custom Skin
         if ( GUILayout.Button ("Click Http"))
         {
-            NetWriter.SetUrl("http://ph.scutgame.com/service.aspx");
+            NetWriter.SetUrl("http://omgwingame.cloudapp.net/rank/service.aspx");
             NetWriter writer =  NetWriter.Instance;
             writer.writeString("PageIndex", "1");
             writer.writeInt32("PageSize", 10);
